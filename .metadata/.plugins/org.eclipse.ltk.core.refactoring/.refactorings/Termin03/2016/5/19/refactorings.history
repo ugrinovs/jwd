@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;orig&apos; in &apos;samostalni.Predmet.isti(...)&apos; to &apos;pred&apos;&#x0D;&#x0A;- Original project: &apos;Termin03&apos;&#x0D;&#x0A;- Original element: &apos;samostalni.Predmet.isti(Predmet).orig&apos;&#x0D;&#x0A;- Renamed element: &apos;orig&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;orig&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;samostalni{Predmet.java[Predmet~isti~QPredmet;@orig!1238!1249!1246!1249!QPredmet;!0!true" name="pred" references="true" stamp="1462467986071" version="1.0"/>
+</session>
