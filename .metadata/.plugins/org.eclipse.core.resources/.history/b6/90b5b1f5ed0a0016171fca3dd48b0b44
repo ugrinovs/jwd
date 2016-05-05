@@ -1,0 +1,8 @@
+
+public class zadatak2 {
+	public static void main(String args[]){
+		float celzijus = 30f;
+		float farenhajt = (celzijus * 18.5 + 32)f;
+		System.out.println(farenhajt);
+	}
+}

@@ -1,0 +1,8 @@
+
+public class zadatak {
+	public static void main(String args[]){
+		float tezinaPaketa = 10.5f;
+	
+		System.out.println("HELLO");
+	}
+}

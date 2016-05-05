@@ -1,0 +1,17 @@
+
+public class zadatak1 {
+	float tezinaPaketa = 10;
+	
+	class Primaoc{
+		public string ime = "Stefan";
+		public string prezime = "Ugrinov";
+		public string adresa =  "Kotorska 73/A";
+	}
+	class Posiljaoc{
+		public string ime = "Petar";
+		public string prezime = "Petrovic";
+		public string adresa =  "Kisacka 55";
+	}
+	bool preporuceno = true;
+	System.out.println("Posiljaoc");
+}

@@ -1,0 +1,17 @@
+
+public class zadatak {
+	public static void main(String args[]){
+		float tezinaPaketa = 10.5f;
+		class Posiljaoc{
+			public string ime = 'Stefan';
+			public string preime = 'Ugrinov';
+			public string adresa = 'Kotorska 73/a';
+		}
+		class Primalac{
+			public string ime = 'Petar';
+			public string preime = 'Petroivc';
+			public string adresa = 'Jevrejska 55';
+		}
+		System.out.println("HELLO");
+	}
+}

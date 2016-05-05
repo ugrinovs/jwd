@@ -1,0 +1,14 @@
+package rs.aleph.jwd13.t2.zad2;
+
+public class Zadatak2 {
+	public static void main(String args[]){
+		System.out.println("Parni brojevi do 15: ");
+		for(int i = 1; i < 15; i++){
+			if(i%2 == 0) System.out.print(i + " ");
+		}
+		System.out.println("Parni brojevi do 19: ");
+		for(int i = 1; i < 19; i++){
+			if(i%2 == 0) System.out.print(i + " ");
+		}
+	}
+}
