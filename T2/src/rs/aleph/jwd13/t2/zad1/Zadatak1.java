@@ -1,0 +1,9 @@
+package rs.aleph.jwd13.t2.zad1;
+
+public class Zadatak1 {
+	public static void main(String args[]){
+		for(int i = 0; i < 13; i++){
+			if(i%2 != 0) System.out.println(i);
+		}
+	}
+}
