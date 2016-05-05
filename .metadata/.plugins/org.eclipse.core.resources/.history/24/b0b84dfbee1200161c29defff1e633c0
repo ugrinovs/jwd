@@ -1,0 +1,25 @@
+package samostalni;
+
+public class Test {
+	
+	public static void ispisiPredmete(Predmet[] predmeti){
+		for(int i = 0; i < predmeti.length; i++){
+			System.out.println(predmeti[i].vratiTekstualnuReprezentacijuZaIspis());
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Predmet[] predmeti = new Predmet[4];
+		predmeti[0] = new Predmet("PR01", "Matematika", "6");
+		predmeti[1] = new Predmet("PR01", "Fizika", "6");
+		predmeti[2] = new Predmet("PR01", "Elektrotehnika", "4");
+		predmeti[3]  = new Predmet("PR01", "Informatika", "10");
+		
+		Rezultat[] rezultat = new Rezultat[10];
+		rezultat[0] = new Rezultat("E", "E", "E", 3, 2, 1, 1, 1);
+				
+		ispisiPredmete(predmeti);
+	}
+
+}

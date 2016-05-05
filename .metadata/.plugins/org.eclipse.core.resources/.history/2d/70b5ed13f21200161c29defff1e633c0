@@ -1,0 +1,7 @@
+package samostalni;
+
+public class Student {
+
+	String indeks;
+	String imeIPrezime;
+}

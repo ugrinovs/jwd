@@ -1,0 +1,55 @@
+package samostalni;
+
+public class Rezultat {
+		//	Modelovati entitet Rezultat ispita. 
+		//	Rezultat ispita su opisani poljima indeks studenta, ime i prezime studenta, sifra predmeta, naziv predmeta,
+		//	broj bodova na teoriji, broj bodova na prakticnom delu ispita, prosecan broj bodova i konacna ocena.
+		//	Obezbediti da su svi atributi zatieni, da postoje vie konstuktora 
+		//	(bez parametara, parametri koji su atributi klase, referenca na objekat), 
+		//	metode vratiTekstualnuReprezentacijuZaIspis(), isti(Predmet pred) i set/get metode za atibute klase.
+		//	Sta bi bio Identifikator (jedinstvena vrednost) Rezultat ispita?
+		//	Napraviti test klasu. Test podatke preuzeti (prekopirati) iz fajla rezultati.csv.
+	
+	protected String indeks;
+	protected String imeIPrezime;
+	protected int sifraPredmeta;
+	protected String nazivPredmeta;
+	protected int brojBodovaTeorija;
+	protected int brojBodovaPrakticni;
+	protected double prosecanBrojBodova;
+	protected int konacnaOcena;
+	
+	public Rezultat() {
+
+	}
+
+	public Rezultat(String indeks, String imeIPrezime, int sifraPredmeta, String nazivPredmeta, int brojBodovaTeorija,
+			int brojBodovaPrakticni, double prosecanBrojBodova, int konacnaOcena) {
+		this.indeks = indeks;
+		this.imeIPrezime = imeIPrezime;
+		this.sifraPredmeta = sifraPredmeta;
+		this.nazivPredmeta = nazivPredmeta;
+		this.brojBodovaTeorija = brojBodovaTeorija;
+		this.brojBodovaPrakticni = brojBodovaPrakticni;
+		this.prosecanBrojBodova = prosecanBrojBodova;
+		this.konacnaOcena = konacnaOcena;
+	}
+	
+	public Rezultat(Rezultat rez){
+		indeks = rez.indeks;
+		imeIPrezime = rez.imeIPrezime;
+		sifraPredmeta = rez.sifraPredmeta;
+		nazivPredmeta = rez.nazivPredmeta;
+		brojBodovaTeorija = rez.brojBodovaTeorija;
+		brojBodovaPrakticni = rez.brojBodovaPrakticni;
+		prosecanBrojBodova = rez.prosecanBrojBodova;
+		konacnaOcena = rez.konacnaOcena;
+	}
+	
+	vratiTekstualnuReprezentacijuZaIspis(){
+		return index + " " + imeIPrezime + " " + sifraPredmeta + " " + nazivPredmeta + " " + brojBodovaTeorija + 
+				" " + brojBodovaPrakticni + " " + prosecanBrojBodova + " " konacnaOcena;
+	
+	}
+	
+}
