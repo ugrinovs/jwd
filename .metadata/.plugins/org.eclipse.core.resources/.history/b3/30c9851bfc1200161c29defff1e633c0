@@ -1,0 +1,14 @@
+package domaci.zad3;
+import java.util.ArrayList;
+
+public class Test {
+	
+	public static void Main(String[] args){
+	ArrayList<Igraci> igraci = new ArrayList<Igraci>();
+	ArrayList<KosarkaskiSavez> KSavez = new ArrayList<KosarkaskiSavez>();
+	
+	igraci.add(new Igraci("#1", "Tarens Kinzi", "Crvena Zvezda"));
+	igraci.add(new Igraci("#51", "Vladimir Stimac", "Crvena Zvezda"));
+	igraci.add(new Igraci("#19", "Marko Simonovic", "Crvena Zvezda"));
+	}
+}

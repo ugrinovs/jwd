@@ -1,0 +1,18 @@
+package domaci.zad3;
+
+
+public class Utakmica {
+	protected String klub1;
+	protected String klub2;
+	
+	public Utakmica(String klub1, String klub2) {
+		this.klub1 = klub1;
+		this.klub2 = klub2;
+	}
+	
+	public Utakmica(){
+		
+	}
+	
+	
+}

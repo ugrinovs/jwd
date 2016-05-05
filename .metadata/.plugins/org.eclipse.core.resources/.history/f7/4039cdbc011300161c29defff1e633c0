@@ -1,0 +1,32 @@
+package domaci.zad3;
+import java.util.ArrayList;
+
+public class Test {
+	
+	public static void ispisiKSavez(ArrayList<KosarkaskiSavez> KSavez, ArrayList<Igraci> igraci){
+		for(int i = 0; i < KSavez.size(); i++){
+			System.out.println("----------------------------KLUB-------------------------------");
+			System.out.println(KSavez.get(i).vratiTekstualnuReprezentacijuZaIspis());
+			for(int j = 0; j < igraci.size(); j++){
+				if(igraci.get(j).Klub.equals(KSavez.get(i).nazivKluba))
+					System.out.println(igraci.get(j).vratiTekstualnuReprezentacijuZaIspis());
+			}
+			System.out.println("---------------------------------------------------------------");
+		}
+	}
+	
+	public static void main(String[] args){
+	ArrayList<Igraci> igraci = new ArrayList<Igraci>();
+	ArrayList<KosarkaskiSavez> KSavez = new ArrayList<KosarkaskiSavez>();
+	
+	
+	igraci.add(new Igraci("#01", "Tarens Kinzi", "Crvena Zvezda"));
+	igraci.add(new Igraci("#51", "Vladimir Stimac", "Crvena Zvezda"));
+	igraci.add(new Igraci("#19", "Marko Simonovic", "Partizan"));
+	
+	KSavez.add(new KosarkaskiSavez("k01", "Crvena Zvezda", igraci, "s01", "Predrag Petkovic"));
+	KSavez.add(new KosarkaskiSavez("k02", "Partizan", igraci, "s01", "Predrag Petkovic"));
+	
+	ispisiKSavez(KSavez, igraci);
+	}
+}

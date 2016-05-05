@@ -1,0 +1,42 @@
+package domaci.zad3;
+
+import java.util.ArrayList;
+
+public class Utakmica {
+	ArrayList<KosarkaskiSavez> kSavez = new ArrayList<KosarkaskiSavez>();
+	ArrayList<Igraci> igraci = new ArrayList<Igraci>();
+	ArrayList<Sudija> sudije = new ArrayList<Sudija>();
+	String utakmica;
+	
+	
+	public Utakmica(ArrayList<KosarkaskiSavez> kSavez, ArrayList<Igraci> igraci, ArrayList<Sudija> sudije,
+			String utakmica) {
+		this.kSavez = kSavez;
+		this.igraci = igraci;
+		this.sudije = sudije;
+		this.utakmica = utakmica;
+	}
+
+	public Utakmica(){
+		
+	}
+	
+	public Utakmica(Utakmica utakmice){
+		kSavez = utakmice.kSavez;
+		igraci = utakmice.igraci;
+		sudije = utakmice.sudije;
+		utakmica = utakmice.utakmica;
+	}
+	
+	public String vratiTekstualnuReprezetacijuZaIpsis(){
+		String ispis;
+		for(int i = 0; i < kSavez.get(i); i++){
+			ispis += kSavez.get(i).vratiTekstualnuReprezentacijuZaIspis() + "\n";
+			for(int j = 0; j < igraci.get(j); j++)
+				ispis += igraci.get(i).vratiTekstualnuReprezentacijuZaIspis() + "\n";
+			for(int k = 0; k < sudije.get(k); k++)
+				ispis += sudije.get(k).vratiTekstualnuReprezentacijuZaIspis() + "\n";
+		}
+		return ispis;
+	}
+}

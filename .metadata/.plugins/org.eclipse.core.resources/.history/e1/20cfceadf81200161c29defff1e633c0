@@ -1,0 +1,6 @@
+package domaci.zad3;
+
+public class Igrac {
+	protected String sifra;
+	protected String imeIPrezime;
+}

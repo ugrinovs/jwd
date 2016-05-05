@@ -1,0 +1,9 @@
+package domaci.zad3;
+
+import java.util.ArrayList;
+
+public class Test {
+	ArrayList<KosarkaskiSavez> KSavez = new ArrayList<KosarkaskiSavez>();
+	
+	KSavez.add(new KosarkaskiSavez("k01", ))
+}

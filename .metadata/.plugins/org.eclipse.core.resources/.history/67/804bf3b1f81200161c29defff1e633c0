@@ -1,0 +1,6 @@
+package domaci.zad3;
+
+public class Klub {
+	protected String sifra;
+	protected String naziv;
+}

@@ -1,0 +1,8 @@
+package domaci.zad3;
+
+public class Utakmica {
+	KosarkaskiSavez kSavez = new KosarkaskiSavez();
+	Igraci igraci = new Igraci();
+	Sudija sudija = new Sudija();
+	String utakmica;
+}

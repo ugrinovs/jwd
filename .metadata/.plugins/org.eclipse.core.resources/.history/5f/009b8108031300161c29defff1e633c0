@@ -1,0 +1,50 @@
+package domaci.zad3;
+import java.util.ArrayList;
+
+public class Test {
+	
+	public static void ispisiKSavez(ArrayList<KosarkaskiSavez> KSavez, ArrayList<Igraci> igraci){
+		for(int i = 0; i < KSavez.size(); i++){
+			System.out.println("----------------------------KLUB-------------------------------");
+			System.out.println(KSavez.get(i).vratiTekstualnuReprezentacijuZaIspis());
+			for(int j = 0; j < igraci.size(); j++){
+				if(igraci.get(j).Klub.equals(KSavez.get(i).nazivKluba))
+					System.out.println(igraci.get(j).vratiTekstualnuReprezentacijuZaIspis());
+			}
+			System.out.println("---------------------------------------------------------------");
+		}
+	}
+	
+	public static void main(String[] args){
+	ArrayList<Igraci> igraci = new ArrayList<Igraci>();
+	ArrayList<KosarkaskiSavez> KSavez = new ArrayList<KosarkaskiSavez>();
+	
+	//IGRACI ZVEZDE
+	igraci.add(new Igraci("#01", "Tarens Kinzi", "Crvena Zvezda"));
+	igraci.add(new Igraci("#51", "Vladimir Stimac", "Crvena Zvezda"));
+	igraci.add(new Igraci("#19", "Marko Simonovic", "Crvena Zvezda"));
+	igraci.add(new Igraci("#09", "Luka Mitrovic", "Crvena Zvezda"));
+	igraci.add(new Igraci("#10", "Branko Lazic", "Crvena Zvezda"));
+	
+	//IGRACI PARTIZANA
+	igraci.add(new Igraci("#01", "Petar Aranitovic", "Partizan"));
+	igraci.add(new Igraci("#02", "Vanja Marinkovic", "Partizan"));
+	igraci.add(new Igraci("#03", "Milos Glisic", "Partizan"));
+	igraci.add(new Igraci("#04", "Milos Koprivica", "Partizan"));
+	igraci.add(new Igraci("#05", "Aleksandar Cvetkovic", "Partizan"));
+	
+	//IGRACI PANATINAIKOSA
+	igraci.add(new Igraci("#03", "Aleksandar Pavlovic", "Panatinaikos"));
+	igraci.add(new Igraci("#06", "Antonis Koniaris", "Panatinaikos"));
+	igraci.add(new Igraci("#08", "Vladimir Jankovic", "Panatinaikos"));
+	igraci.add(new Igraci("#09", "Antonis Focis", "Panatinaikos"));
+	igraci.add(new Igraci("#10", "Miroslav BRaduljica", "Panatinaikos"));
+	
+	KSavez.add(new KosarkaskiSavez("klub01", "Crvena Zvezda", igraci));
+	KSavez.add(new KosarkaskiSavez("klub02", "Partizan", igraci));
+	KSavez.add(new KosarkaskiSavez("klub03", "Panatinaikos", igraci));
+	
+	
+	ispisiKSavez(KSavez, igraci);
+	}
+}

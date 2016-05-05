@@ -1,0 +1,44 @@
+package domaci.zad3;
+import java.util.ArrayList;
+
+public class KosarkaskiSavez {
+	protected String sifraKluba;
+	protected String nazivKluba;
+	//Igraci igraci = new Igraci();
+	ArrayList<Igraci> igraci = new ArrayList<Igraci>();
+	protected String sifraSudije;
+	protected String imeIPrezimeSudije;
+	
+	public KosarkaskiSavez(String sifraKluba, String nazivKluba, ArrayList<Igraci> igraci,
+			String sifraSudije, String imeIPrezimeSudije) {
+		this.sifraKluba = sifraKluba;
+		this.nazivKluba = nazivKluba;
+		this.igraci = igraci;
+		this.sifraSudije = sifraSudije;
+		this.imeIPrezimeSudije = imeIPrezimeSudije;
+	}
+
+	public KosarkaskiSavez() {
+	}
+	
+	public KosarkaskiSavez(KosarkaskiSavez KSavez) {
+		sifraKluba = KSavez.sifraKluba;
+		nazivKluba = KSavez.nazivKluba;
+		igraci = KSavez.igraci;
+
+		
+	}
+	
+	
+	
+	public String vratiTekstualnuReprezentacijuZaIspis(){
+		String ispis = sifraKluba + nazivKluba + sifraSudije + imeIPrezimeSudije;
+			for(int i = 0; i < igraci.size();i++)
+				ispis += "\n" + igraci.get(i).vratiTekstualnuReprezentacijuZaIspis();
+			return ispis;
+		
+	}
+
+	
+	
+}

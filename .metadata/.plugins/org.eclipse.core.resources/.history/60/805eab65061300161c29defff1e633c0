@@ -1,0 +1,31 @@
+package domaci.zad3;
+
+public class Utakmica {
+	KosarkaskiSavez kSavez = new KosarkaskiSavez();
+	Igraci igraci = new Igraci();
+	Sudija sudija = new Sudija();
+	String utakmica;
+	
+	public Utakmica(KosarkaskiSavez kSavez, Igraci igraci, Sudija sudija, String utakmica) {
+		this.kSavez = kSavez;
+		this.igraci = igraci;
+		this.sudija = sudija;
+		this.utakmica = utakmica;
+	}
+	
+	public Utakmica(){
+		
+	}
+	
+	public Utakmica(Utakmica utakmice){
+		kSavez = utakmice.kSavez;
+		igraci = utakmice.igraci;
+		sudija = utakmice.sudija;
+		utakmica = utakmice.utakmica;
+	}
+	
+	public String vratiTekstualnuReprezetacijuZaIpsis(){
+		String ispis;
+		return ispis;
+	}
+}

@@ -1,0 +1,30 @@
+package domaci.zad3;
+
+public class KosarkaskiSavez {
+	protected String sifraKluba;
+	protected String nazivKluba;
+	Igraci igraci = new Igraci();
+	protected String sifraSudije;
+	protected String imeIPrezimeSudije;
+	
+	public KosarkaskiSavez(String sifraKluba, String nazivKluba, String sifraIgraca, String imeIPrezimeIgraca,
+			String sifraSudije, String imeIPrezimeSudije) {
+		this.sifraKluba = sifraKluba;
+		this.nazivKluba = nazivKluba;
+		this.igraci.sifra = sifraIgraca;
+		this.igraci.imeIPrezime = imeIPrezimeIgraca;
+		this.sifraSudije = sifraSudije;
+		this.imeIPrezimeSudije = imeIPrezimeSudije;
+	}
+
+	public KosarkaskiSavez() {
+	}
+	
+	public KosarkaskiSavez(KosarkaskiSavez KSavez) {
+		sifraKluba = KSavez.sifraKluba;
+		nazivKluba = KSavez.nazivKluba;
+	}
+
+	
+	
+}

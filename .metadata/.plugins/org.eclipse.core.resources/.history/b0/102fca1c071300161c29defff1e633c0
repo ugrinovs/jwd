@@ -1,0 +1,31 @@
+package domaci.zad3;
+import java.util.ArrayList;
+
+public class KosarkaskiSavez {
+	protected String sifraKluba;
+	protected String nazivKluba;
+	
+	public KosarkaskiSavez(String sifraKluba, String nazivKluba) {
+		this.sifraKluba = sifraKluba;
+		this.nazivKluba = nazivKluba;
+	}
+
+	public KosarkaskiSavez() {
+	}
+	
+	public KosarkaskiSavez(KosarkaskiSavez KSavez) {
+		sifraKluba = KSavez.sifraKluba;
+		nazivKluba = KSavez.nazivKluba;
+	}
+	
+	
+	
+	public String vratiTekstualnuReprezentacijuZaIspis(){
+		String ispis = "Klub: " + sifraKluba + " | Naziv: " + nazivKluba;
+			return ispis;
+		
+	}
+
+	
+	
+}
